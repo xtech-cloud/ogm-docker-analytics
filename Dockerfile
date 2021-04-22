@@ -1,6 +1,6 @@
 # *************************************
 #
-# OMO MSA
+# OpenGM
 #
 # *************************************
 
@@ -13,7 +13,7 @@ ENV MSA_MODE release
 
 EXPOSE 9603
 
-ADD omo-msa-analytics /usr/local/bin/
-RUN chmod +x /usr/local/bin/omo-msa-analytics
+ADD ogm-analytics /usr/local/bin/
+RUN chmod +x /usr/local/bin/ogm-analytics
 
-CMD ["omo-msa-analytics"]
+CMD ["/usr/local/bin/ogm-analytics"]
